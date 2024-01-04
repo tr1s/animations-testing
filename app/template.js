@@ -6,7 +6,7 @@ export default function Template({ children }) {
     <div className="template template-home">
       <PageTransitionWrapper>
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </PageTransitionWrapper>
     </div>
   );
