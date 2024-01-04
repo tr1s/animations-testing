@@ -1,0 +1,49 @@
+/*
+* Splash Screen Intro Animation
+* ------------------------------------------------------------------------------
+*
+*/
+
+.introduction {
+	--splash-color: #e0633f;
+	position: absolute;
+	background: var(--splash-color);
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	.splash {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		z-index: 10000;
+		img {
+			width: 34vw;
+			margin: 0 auto;
+		}
+		p {
+			color: white;
+			font-size: 24vw;
+			text-align: center;
+			span {
+				display: block;
+				width: 10px;
+				height: 10px;
+				background-color: white;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+		}
+	}
+	svg {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: calc(100% + 300px);
+		path {
+			fill: var(--splash-color);
+		}
+	}
+}
