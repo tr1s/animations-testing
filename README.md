@@ -1,12 +1,12 @@
-Stripping a bigger project down to a minimal version to share and test a bug.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+I've stripped a bigger project down to a minimal version to share and test a bug / issue I'm having.
 
 ## Getting Started
 
 `npm install` then `npm run dev` or `pnpm install` then `pnpm run dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Deploy on Vercel
 
