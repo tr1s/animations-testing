@@ -20,6 +20,7 @@ export default function PageTransitionWrapper({ children }) {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -100 }}
         transition={{ type: "spring", damping: 16, stiffness: 160 }}
+        layoutId={path}
       >
         {children}
       </motion.div>
