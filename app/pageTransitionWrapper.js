@@ -14,13 +14,13 @@ export default function PageTransitionWrapper({ children }) {
   const path = usePathname();
 
   return (
-    <AnimatePresence mode="wait" layoutId={path}>
+    <AnimatePresence mode="wait">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -100 }}
         transition={{ type: "spring", damping: 16, stiffness: 160 }}
-        layoutId={path}
+        key={path}
       >
         {children}
       </motion.div>

@@ -9,6 +9,7 @@
 import styles from "./styles.module.scss";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { opacity, slideUp } from "./anim";
 
@@ -27,6 +28,7 @@ export default function IntroSplashScreen() {
   const [isLoading, setIsLoading] = useState(true);
   const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
+  const path = usePathname();
 
   useEffect(() => {
     setTimeout(() => {
@@ -78,6 +80,7 @@ export default function IntroSplashScreen() {
           initial="initial"
           exit="exit"
           className={styles.introduction}
+          key={path}
         >
           {dimension.width > 0 && (
             <>
